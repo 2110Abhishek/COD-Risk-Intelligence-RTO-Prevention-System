@@ -1,0 +1,51 @@
+{
+  "policy_version": "1.1",
+  "timezone": "Asia/Kolkata",
+  "risk_thresholds": {
+    "ship_as_is_max": 0.2,
+    "confirmation_max": 0.4,
+    "prepaid_max": 0.65,
+    "hold_min": 0.65
+  },
+  "financials": {
+    "forward_shipping": 65.0,
+    "return_shipping": 65.0,
+    "packaging_handling": 25.0,
+    "product_cost": 180.0,
+    "damage_probability": 0.08,
+    "aov": 649.0,
+    "gross_margin": 0.62,
+    "cac_reference": 300.0
+  },
+  "prepaid_offer": {
+    "enabled": true,
+    "discount_amount": 15.0,
+    "currency": "INR",
+    "expiry_hours": 24
+  },
+  "confirmation": {
+    "enabled": true,
+    "timeout_hours": 24,
+    "max_reminders": 1
+  },
+  "customer_protection": {
+    "protect_first_time_customers": true,
+    "manual_review_before_cancellation": true,
+    "geography_alone_can_cancel": false,
+    "llm_alone_can_cancel": false
+  },
+  "intervention_assumptions": {
+    "confirmation_response_rate": 0.65,
+    "confirmation_effectiveness": 0.7,
+    "prepaid_acceptance_rate": 0.12,
+    "prepaid_rto_rate": 0.04
+  },
+  "ai_config": {
+    "enabled": false,
+    "provider": "gemini",
+    "model_name": "gemini-1.5-flash",
+    "timeout_seconds": 8,
+    "validate_names": true,
+    "validate_addresses": true
+  }
+}
