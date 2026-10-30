@@ -9,7 +9,7 @@ This log documents how AI assistance was utilized throughout development, the pr
 
 ## 1. Summary of AI Tools Utilized
 
-- **Tool:** Google Antigravity AI Coding Assistant (Gemini 3.8 Flash).
+- **Tool:** Chat GPT and Google Antigravity AI Coding Assistant (Gemini 3.8 Flash).
 - **Core Tasks:**
   - Scaffolding FastAPI routes, Pydantic schemas, and SQLAlchemy database models.
   - Designing scikit-learn feature engineering pipelines and model comparison scripts.
